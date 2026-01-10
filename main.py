@@ -60,5 +60,6 @@ metrics2, stats_summary2 = performance_analysis(cum_rets=cum_rets_df2,
 # print(stats_summary1.to_markdown())
 # print(stats_summary2.to_markdown())
 
-# SHOW THE STD OF EACH CORE METRIC
-# SAVE IMPORTANT DIAGNOSTIC DATA AS EXCEL IN SHEETS
+# SHOW THE STDEV OF EACH CORE METRIC
+# SAVE IMPORTANT DIAGNOSTIC DATA AS EXCEL FILES in "backtest_data"
+# BEGIN PARAMETER TUNING TO OPTIMIZE P&L
