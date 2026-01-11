@@ -29,7 +29,7 @@ def OU_process(cum_residuals):
     centered_m = m - m.mean()
     kappa = -np.log(b) * 252
     sigma_eq = zeta.std(ddof=1) / np.sqrt(1 - b**2)
-    # s_score = -centered_m / sigma_eq # Assumes that cum_residuals of the last day is zero
+    # s_score = -centered_m / sigma_eq # Assumes that cum_residuals of the last day is zero, from research paper
     s_score = (cum_residuals.iloc[-1] - centered_m) / sigma_eq # Out-of-sample s_score
 
     # Mask OU metrics for invalid b values

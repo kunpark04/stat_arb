@@ -8,7 +8,7 @@ def OLS_process(rets_window, eigenportfolio_rets, window_OU):
 
     # Vectorized OLS for residual calculation
     F = eigenportfolio_rets.tail(window_OU)
-    F.insert(0, 0, 1)
+    F.insert(0, 0, 1) # This is the intercept
     R = rets_OU
 
     # Calculate the beta coefficients (weight of each factor)
